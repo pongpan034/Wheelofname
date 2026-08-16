@@ -11,8 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
-    <!-- Favicon SVG -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎯</text></svg>">
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="logo.jpg">
     
     <link rel="stylesheet" href="style.css">
 </head>
@@ -21,11 +21,8 @@
         <!-- Top Navbar -->
         <header class="navbar">
             <div class="nav-brand">
-                <div class="brand-icon">
-                    <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M4.93 19.07l14.14-14.14"></path>
-                    </svg>
+                <div class="brand-logo-wrapper">
+                    <img src="logo.jpg" alt="Logo" class="brand-logo-img">
                 </div>
                 <div class="brand-text">
                     <h1 class="brand-title">วงล้อสุ่มชื่อนักเรียน</h1>
@@ -235,6 +232,17 @@
                 </div>
             </aside>
         </main>
+
+        <!-- Footer Credit -->
+        <footer class="app-footer">
+            <div class="footer-content">
+                <span class="footer-brand">🎯 วงล้อสุ่มชื่อนักเรียน</span>
+                <span class="footer-separator">•</span>
+                <span class="footer-credit">พัฒนาโดย <strong>DBT TTC</strong></span>
+                <span class="footer-separator">•</span>
+                <span class="footer-tagline">เพื่อการศึกษาและห้องเรียน ไร้โฆษณา 100%</span>
+            </div>
+        </footer>
 
         <!-- Winner Modal Popup -->
         <div id="modal-winner" class="modal-overlay hidden" role="dialog" aria-modal="true">
