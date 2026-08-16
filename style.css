@@ -102,6 +102,28 @@ body {
     gap: 12px;
 }
 
+.brand-logo-wrapper {
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(2, 132, 199, 0.25);
+    border: 2px solid var(--primary-300);
+    background: #ffffff;
+    flex-shrink: 0;
+    animation: pulse-subtle 3s infinite ease-in-out;
+}
+
+.brand-logo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
 .brand-icon {
     width: 48px;
     height: 48px;
@@ -1099,6 +1121,57 @@ input:checked + .toggle-slider:before {
 
 .hidden {
     display: none !important;
+}
+
+/* =========================================================
+   FOOTER (Credit: DBT TTC)
+   ========================================================= */
+.app-footer {
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(8px);
+    border-top: 1.5px solid var(--primary-200);
+    padding: 8px 24px;
+    text-align: center;
+    flex-shrink: 0;
+    z-index: 50;
+    box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.03);
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 0.88rem;
+    color: var(--text-muted);
+}
+
+.footer-brand {
+    font-weight: 700;
+    color: var(--primary-800);
+}
+
+.footer-credit {
+    color: var(--primary-900);
+}
+
+.footer-credit strong {
+    color: var(--primary-700);
+    font-weight: 800;
+    background: var(--primary-100);
+    padding: 2px 8px;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--primary-300);
+}
+
+.footer-separator {
+    color: var(--primary-300);
+}
+
+.footer-tagline {
+    color: var(--text-subtle);
+    font-size: 0.82rem;
 }
 
 /* =========================================================
